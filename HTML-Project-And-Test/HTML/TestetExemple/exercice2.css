@@ -1,0 +1,107 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-size: 18px;
+	font-family: Arial;
+	color: #fff;
+}
+
+header {
+	background-image: url("file:///C:/Users/User/home/HTML/img/header.jpg.jpg");
+	padding: 300px 100px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+header article {
+	width: 40%;
+}
+
+h1 {
+	color: #f4e5c3;
+	font-size: 6em;
+}
+header p {
+	line-height: 2;
+}
+
+header a {
+	padding: 30px 80px;
+	background: #22C1C3;
+	background: linear-gradient(0deg,rgba(195, 120, 34, 1) 0%, rgba(255, 240, 207, 1) 100%);
+	border-radius: 50px;
+	display: inline-block;
+	margin-top: 55px;
+	box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
+	text-decoration: none;
+	color: #777;
+	font-size: 1.4em;
+}
+
+main {
+	background-image: url("file:///C:/Users/User/home/HTML/img/main.jpg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 100px 0 400px;
+}
+#toto1 {
+	background:linear-gradient(45deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 0.6) 50%, rgba(252, 176, 69, 0) 100%),
+	url("file:///C:/Users/User/home/HTML/img/section1.jpg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 100px;
+	width: 80%;
+	margin: 0 auto;
+	border-radius: 100px;
+}
+#toto1 article {
+	display: inline-block;
+	width: 25%;
+	background-color: red;
+	padding: 2%;
+	text-align: center;
+}
+
+#toto2 {
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 80%;
+	margin: 0 auto;
+}
+#toto2 article {
+	display: inline-block;
+	background: linear-gradient(0deg,rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+	width: 31%;
+	margin-top: 100px;/*
+	height: 400px;*/
+	text-align: center;
+	padding: 100px;
+	border-radius: 50px;
+}
+#toto2 article + article {
+	margin-left: 3%;
+}
+#toto2 article:nth-child(4) {
+	margin-left: 0%;
+}
+#toto2 article .fa-solid {
+	width: 100px;
+	height: 100px;
+	background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+	border-radius: 50%;
+	font-size: 2em;
+	padding-top: 30px;
+	display: inline-block;
+}
+
+
+
+
+
+
+
+
+

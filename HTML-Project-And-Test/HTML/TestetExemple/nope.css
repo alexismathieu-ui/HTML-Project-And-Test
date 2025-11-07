@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-size: 18px;
+    font-family: Arial;
+    color: #ffffff;
+}
+
+header {
+    background-image: url("file:///C:/Users/User/home/HTML/img/header.jpg.jpg");
+    padding: 300px 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header article{
+    width : 40%;
+}
+
+h1 {
+    color: #f4e5c3;
+    font-size: 6em;
+}
+
+header p {
+    line-height: 2;
+}
+
+header a{
+    padding : 30px 50px;
+    background : #22C1C3;
+    background: linear-gradient(0deg,#f3c86a 0%,rgb(238, 217, 172)100%);
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: 55px;
+    box-shadow: 5px 5px 5px #000000;
+    color:  gray;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main{
+    background-image: url("file:///C:/Users/User/home/HTML/img/main.jpg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0 400px;
+}
+
+#toto1{
+    background-image: url("file:///C:/Users/User/home/HTML/img/section1.jpg.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 100px;
+}
+
+#toto1 article{
+    display: inline-block;
+    width : 23.25%;
+    background-color: darkgreen;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#toto1 article + article{
+    margin-left: 2%;
+}
+
+#toto2 {
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 80%;
+	margin: 0 auto;
+}
+#toto2 article {
+	display: inline-block;
+	background: linear-gradient(0deg,rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+	width: 31%;
+	margin-top: 100px;/*
+	height: 400px;*/
+	text-align: center;
+	padding: 100px;
+	border-radius: 50px;
+}
+#toto2 article + article {
+	margin-left: 3%;
+}
+#toto2 article:nth-child(4) {
+	margin-left: 0%;
+}
+#toto2 article .fa-solid {
+	width: 100px;
+	height: 100px;
+	background: linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+	border-radius: 50%;
+	font-size: 2em;
+	padding-top: 30px;
+	display: inline-block;
+}
