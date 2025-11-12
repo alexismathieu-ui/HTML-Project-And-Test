@@ -176,3 +176,75 @@ margin 0 auto;
     </body>
 
 </html>
+
+
+0 --> 767px : mobile
+768px --> 1023px : tablette
+1024px et plus : desktop
+
+:root {
+    --main-color: #3498db;
+    --secondary-color: #2ecc71;
+    --font-family: 'Arial, sans-serif';
+}
+
+<input type="checkbox" id="menu-toggle">
+<label for="menu-toggle" class="menu-icon">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+</label>
+<ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+</ul>
+
+css:
+input[type="checkbox"] {
+    display: none;
+}
+.nav-links{
+    display : flex;
+    justify-content : space-around;
+    width : 50%;
+}
+.nav-links li{
+    list-style : none;
+}
+.nav-links a {
+    text-decoration : none;
+    color : black;
+    font-size : 14px;
+}
+.menu-icon div {
+    width : 25px;
+    height : 3px;
+    background-color : black;
+    margin : 5px;
+    border-radius : 5px;
+}
+
+.menu-icon {
+    display : none;
+}
+@media (max-width: 768px) {
+    .nav-links {
+        display : none;
+    }
+    .menu-icon {
+        display : block;
+        cursor : pointer;
+    }
+    input[type="checkbox"]:checked ~ .nav-links {
+        display : flex;
+        flex-direction : column;
+        align-items : center;
+        position : absolute;
+        top : 50px;
+        left : 0;
+        width : 100%;
+        background-color : white;
+    }
+}
