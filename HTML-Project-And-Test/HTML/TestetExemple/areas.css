@@ -1,0 +1,68 @@
+h2,
+h3 {
+    margin: 10px;
+}
+
+section header,
+section footer{
+    padding : 10px;
+    
+}
+.grid {
+    display : grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(5, 1fr);
+    gap : 1rem;
+}
+
+.grid header{
+    grid-row-start: 1;
+    grid-row-end : 2;
+    grid-row: 1 / 2;
+    grid-column: 1 / 6;
+    margin-top: 3em;
+    background-color: #ddd;
+}
+
+nav{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    background-color: #ffd04f;
+}
+
+nav a{
+    display: block;
+    padding: 1em;
+    border : solid 1px #bd2d2d;
+    margin: 0.5em;
+    color: #bd2c2c;
+}
+
+main{
+    grid-row: 2 / 3;
+    grid-column: 2 / 5;
+    background-color: #fff;
+}
+
+aside{
+    grid-row: 2 / 3;
+    grid-column: 5 / 6;
+    background-color: #faa301;
+}
+
+aside a{
+    display: block;
+    font-size: 30px;
+}
+
+.fa-facebook-square{ 
+    padding-left: 1rem;
+}
+
+footer{
+    grid-row: 3 / 4;
+    grid-column: 1 / 6;
+    margin-bottom: 3em;
+    background-color: #ddd;
+}
+

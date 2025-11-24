@@ -1,0 +1,98 @@
+body {
+    background: #000;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.grid {
+    margin: 40px auto;
+    width: 90vw;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 6vw); /* 9 lignes */
+    gap: 3px;
+    position: relative;
+}
+
+.header{
+    background-color: #080808;
+}
+
+.footer{
+    background-color: #080808;
+}
+
+.blocA:hover, .blocB:hover, .blocC:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+img:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.titre:hover, .infos:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.item1 { grid-area: 1 / 5 / 3 / 6; }
+.item2 { grid-area: 4 / 1 / 6 / 2; }
+.item3 { grid-area: 3 / 2 / 7 / 6; }
+.item4 { grid-area: 4 / 6 / 6 / 8; }
+.item5 { grid-area: 7 / 4 / 9 / 6; }
+.item6 { grid-area: 2 / 7 / 4 / 8; }
+.item7 { grid-area: 3 / 8 / 5 / 9; }
+.item8 { grid-area: 8 / 6 / 10 / 7; }
+.item9 { grid-area: 6 / 7 / 7 / 9; }
+.item10 { grid-area: 7 / 7 / 9 / 8; }
+.item11 { grid-area: 5 / 8 / 6 / 10; }
+
+/* Blocs gris */
+.blocA {
+    background: #464545;
+    grid-area: 2 / 3 / 3 / 5;
+}
+
+.blocB {
+    background: #bbbbbb;
+    grid-area: 7 / 3 / 8 / 4;
+}
+
+.blocC {
+    background: #616161;
+    grid-area: 6 / 6 / 8 / 7;
+}
+
+/* Textes */
+.titre {
+    position: absolute;
+    top: 10vw;      /* Ajuste selon l’emplacement voulu */
+    left: 50vw;    /* Ajuste pour tomber pile entre les images */
+    
+    font-size: 4.8rem;
+    font-weight: bold;
+    line-height: 1;
+    z-index: 10;   /* Pour passer devant les images */
+    width: 5%;
+}
+
+
+.infos {
+    grid-area: 7 / 8 / 8 / 9;
+    font-size: 1.2rem;
+    align-self: center;
+}
+
+/* Images */
+.grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.visually-hidden {
+    opacity : 0;
+}

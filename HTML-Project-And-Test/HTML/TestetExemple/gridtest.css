@@ -1,0 +1,54 @@
+body {
+    background: #000;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.grid {
+    margin: 40px auto;
+    width: 90vw;
+
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 9vw); /* 9 lignes */
+    gap: 10px;
+}
+
+/* Images principales */
+.item1 { grid-area: 1 / 5 / 3 / 7; }
+.item2 { grid-area: 4 / 2 / 6 / 3; }
+.item3 { grid-area: 3 / 3 / 7 / 8; }
+.item4 { grid-area: 4 / 8 / 6 / 10; }
+.item5 { grid-area: 7 / 4 / 9 / 6; }
+
+
+
+
+
+
+/* Blocs gris */
+.blocA { background:#444; grid-area: 2 / 4 / 3 / 6; }
+.blocB { background:#bbb; grid-area: 7 / 3 / 8 / 4; }
+.blocC { background:#777; grid-area: 5 / 8 / 8 / 9; }
+
+/* Textes */
+.titre {
+    font-size: 3.8rem;
+    font-weight: 800;
+    line-height: 1;
+    grid-area: 2 / 7 / 4 / 10;
+    align-self: start;
+}
+
+.infos {
+    font-size: 1.4rem;
+    grid-area: 8 / 7 / 10 / 10;
+    align-self: start;
+}
+
+/* Images */
+.grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

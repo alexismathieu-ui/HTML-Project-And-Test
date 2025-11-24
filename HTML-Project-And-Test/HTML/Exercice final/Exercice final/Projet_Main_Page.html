@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <title>Street Art Blog - Accueil</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+
+    <link rel="stylesheet" href="Style_Site.css">
+</head>
+<body>
+
+    <!-- HEADER + MENU + SLIDER -->
+    <header class="site-header">
+
+        <!-- Barre du haut (logo + menu) -->
+        <div class="top-bar">
+            <div class="top-bar-inner">
+                <a href="#" class="logo">
+                    <img src="images/logo.png" alt="Logo Street Art Blog">
+                </a>
+
+                <!-- Menu burger (checkbox hack) -->
+                <input type="checkbox" id="nav-toggle">
+                <label for="nav-toggle" class="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+
+                <!-- Navigation principale -->
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="Projet_Main_Page.html" class="active">Accueil</a></li>
+                        <li><a href="Projet_Galerie_Page.html">Galerie</a></li>
+                        <li><a href="#">A propos</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- SLIDER full width -->
+        <div class="hero-slider">
+            <!-- Radios de contrôle -->
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+
+            <!-- Les slides -->
+            <div class="slides">
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <img src="images/banner1.jpg" alt="banner1">
+                    <div class="slider-caption">
+                        <p class="caption-line1">Je m'appelle Alvin.</p>
+                        <p class="caption-line2">Bienvenue sur mon blog !</p>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <img src="images/banner2.jpg" alt="banner2">
+                    <div class="slider-caption">
+                        <p class="caption-line1">Plongez dans l'univers</p>
+                        <p class="caption-line2">du Street Art contemporain.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flèches -->
+            <div class="slider-arrows">
+                <!-- quand slide1 actif, ces deux labels apparaissent -->
+                <label for="slide2" class="arrow arrow-left arrow-1">
+                    <i class="fa-solid fa-angle-left"></i>
+                </label>
+                <label for="slide2" class="arrow arrow-right arrow-1">
+                    <i class="fa-solid fa-angle-right"></i>
+                </label>
+
+                <!-- quand slide2 actif, ces deux labels apparaissent -->
+                <label for="slide1" class="arrow arrow-left arrow-2">
+                    <i class="fa-solid fa-angle-left"></i>
+                </label>
+                <label for="slide1" class="arrow arrow-right arrow-2">
+                    <i class="fa-solid fa-angle-right"></i>
+                </label>
+            </div>
+
+            <!-- Petits points de navigation -->
+            <div class="slider-dots">
+                <label for="slide1" class="dot"></label>
+                <label for="slide2" class="dot"></label>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENU (max 1100px) -->
+    <main class="page-main">
+        <div class="container">
+
+            <!-- Citation -->
+            <section class="citation">
+                <div class="citation-box">
+                    <p class="citation-text">" Art should comfort the disturbed and disturb the comfort "</p>
+                    <p class="citation-author">Banksy</p>
+                </div>
+            </section>
+
+            <!-- ACTU DU MOMENT -->
+            <section class="actu">
+                <div class="section-title">
+                    <i class="fa-regular fa-calendar-days section-icon"></i>
+                    <h2>L'actu du moment</h2>
+                </div>
+
+                <div class="articles-grid">
+                    <!-- Article 1 -->
+                    <article class="card">
+                        <h3>Urban Art Fair 2023</h3>
+                        <p class="date">Publié le 4 juin 2023</p>
+
+                        <img src="images/actu1.jpg" alt="Urban Art Fair 2023">
+
+                        <p>La cinquième édition aura lieu au Carreau du temple du 20 au 23 septembre 2023. L'occasion de faire de belles découvertes ou d'admirer les oeuvres d'artistes incontournables.</p>
+
+                        <p>L’innovation de cette foire est la pluralité des événements qui en découle. Pour l’occasion, le Carreau du Temple réitère les projections cinématographiques autour du street art.</p>
+
+                        <p>Cette année la foire se déplace aussi hors les murs avec la présentation inédite de l’exposition « Cannot be Bo(a)rdered » à découvrir en entrée libre du 1er septembre au 7 novembre 2023 à l’Espace Commines. Une trentaine d’artistes venus de Singapour, Malaisie et Indonésie ont mis en place cette exposition autour de la culture du skate board.</p>
+                        <div class="card-footer">
+                            <a href="#" class="btn">Lire la suite</a>
+                        </div>
+                    </article>
+
+                    <!-- Article 2 -->
+                    <article class="card">
+                        <h3>Vente solidaire de Street Art</h3>
+                        <p class="date">Publié le 17 mai 2023</p>
+
+                        <img src="images/actu2.jpg" alt="Vente solidaire de street art">
+
+                        <p>A contexte exceptionnel, moyens exceptionnels. Emmaüs International a fait appel à la Galerie d’art en ligne KAZoART. Plus de 60 street artistes se sont mobilisés, dont des artistes qui suivent le mouvement Emmaüs depuis de nombreuses années.</p>
+
+                        <p>Artistes renommés ou émergents, tous ont accepté de faire don d’une ou plusieurs de leurs oeuvres au profit d’une grande Vente Solidaire de Street Art, qui se déroulera en ligne sur KAZoART, à compter du 12 juin 2023.</p>
+
+                        <p>Les bénéfices de cette vente solidaire seront intégralement reversés au fonds d’urgence d’Emmaüs International, réparti entre les communautés d’Emmaüs du monde entier en fonction de leurs besoins.</p>
+
+                        <div class="card-footer">
+                            <a href="#" class="btn">Lire la suite</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- INTERVIEWS -->
+            <section class="interviews">
+                <div class="section-title">
+                    <i class="fa-solid fa-microphone section-icon microphone"></i>
+                    <h2>Les interviews</h2>
+                </div>
+
+                <div class="articles-grid">
+                    <!-- Interview 1 -->
+                    <article class="card">
+                        <h3>Interview de Geleb</h3>
+                        <p class="date">Publié le 12 juin 2023</p>
+
+                        <img src="images/geleb.jpg" alt="Interview de Geleb">
+
+                        <p>Reconnaissable entre mille grâce à son univers hypnotique, le street artiste Geleb a bien voulu répondre à mes questions.</p>
+
+                        <p>Influencé par ses origines tahitiennes, il y a vécu lorsqu'il était plus jeune. Ces graphs sont comme des souvenirs qui ont fait naître des formes et des motifs qui rappellent l'art primitif ou premier.</p>
+
+                        <div class="card-footer">
+                            <a href="#" class="btn">Lire la suite</a>
+                        </div>
+                    </article>
+
+                    <!-- Interview 2 -->
+                    <article class="card">
+                        <h3>Interview de Joris Delacour</h3>
+                        <p class="date">Publié le 30 mai 2023</p>
+
+                        <img src="images/delacour.jpg" alt="Interview de Joris Delacour">
+
+                        <p>Rencontre avec Joris, artiste peintre autodidacte et diplômé des Beaux Arts, vivant et travaillant à Paris.</p>
+
+                        <p>Le jeune homme aime transmettre sa passion pour le graffiti. Il donne d'ailleurs des cours d’initiation, et fait aussi des prestations de live painting ou du team building pour des groupes. Il aime apprendre aux autres à s’exprimer et en a fait son métier.</p>
+
+                        <div class="card-footer">
+                            <a href="#" class="btn">Lire la suite</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="newsletter-wrapper">
+                <h2 class="newsletter-title">Newsletter</h2>
+                <form action="#" method="post" class="newsletter">
+                    <p>Inscrivez-vous à ma newsletter pour ne rien rater de l'actualité du street art :</p>
+                    <input type="email" name="email" placeholder="E-mail address" required>
+                    <button type="submit">Je m'inscris</button>
+                </form>
+            </div>
+            <div class="social-media">
+                <h2>Réseaux sociaux</h2>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

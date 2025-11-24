@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lexend:wght@100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Momo+Signature&family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <title>MF Maquette2</title>
+        <link rel="icon" type="image/png" href="file:///C:/Users/User/Downloads/reliability.png"/>
+        <link rel="stylesheet" href="mobilefirstmaquette2.css">
+
+    </head>
+    <body>
+        <script>
+        $(document).ready(function() {
+        function initSlider() {
+            const isMobile = window.innerWidth <= 768;
+            $(".slider").bxSlider({
+            mode: "horizontal",
+            slideMargin: 0,
+            minSlides: 1,
+            maxSlides: 1,
+            moveSlides: 1,
+            pager: true,
+            controls: true,
+            infiniteLoop: true,
+            auto: true,
+            pause: 6000,
+            adaptiveHeight: true,
+            slideWidth: isMobile ? 320 : 700, // 👈 auto-ajustement
+            shrinkItems: true,
+            responsive: true
+            });
+        }
+
+        initSlider();
+
+        // Recharger bxSlider si on redimensionne la fenêtre
+        $(window).on("resize", function() {
+            if ($(".bx-wrapper").length) {
+            $(".slider").bxSlider().reloadSlider();
+            }
+        });
+        });
+        </script>
+        <header>
+            <section class="top">
+            <p class="logo">Cloud Sphere</p>
+
+            <!-- Checkbox cachée pour le menu -->
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+            <!-- Icône hamburger -->
+            <label for="menu-toggle" class="menu-icon">☰</label>
+            
+            <!-- Liens de navigation -->
+            <nav class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Features</a>
+                <a href="#">Pricing</a>
+                <a href="#">About us</a>
+                <a href="#">Support</a>
+                <a href="#">Contact</a>
+            </nav>
+
+            <a href="#" class="register-button">Register Now</a>
+            </section>
+            <div class="line"></div>
+            <div class="header-content">
+                <h1>Unleash the Power of Reliable and Scalable Web Hosting Solutions</h1>
+                <p>Experience seamless performance and unmatched reliability with our cloud hosting services. Discover a new era of web hosting tailored to your needs.</p>
+                <a href="#" class="get-started-button">Start Hosting Today</a>
+            </div>
+        </header>
+        <main>
+            <section class="extension"></section>
+            <section class="Us">
+                <h2>Why choosing us</h2>
+                <p>The things that make us look special</p>
+            <article id="Reasons">
+                <div class="Reason1">
+                    <img src="img/reliability.png" alt="">
+                    <h3>Reliability</h3>
+                    <p>Our cloud hosting services are built on a robust infrastructure, ensuring maximum uptime and reliability for your website.</p>
+                </div>
+                <div class="Reason2">
+                    <img src="img/performance.png" alt="">
+                    <h3>Scalability</h3>
+                    <p>Easily scale your resources up or down based on your website's needs, allowing you to adapt to changing traffic demands effortlessly.</p>
+                </div>
+                <div class="Reason3">
+                    <img src="img/security.png" alt="">
+                    <h3>Security</h3>
+                    <p>We prioritize the security of your data with advanced measures such as encryption, firewalls, and regular backups to protect against threats.</p>
+                </div>
+            </article>
+            </section>
+            <section id="Plans">
+                <h2>HOSTING PLANS</h2>
+                <p class="subtitle">Choose the plan that fits your needs</p>
+                <div class="plans-container">
+
+                    <!-- BASIC PLAN -->
+                    <div class="plan-card basic">
+                        <div class="plan-header">
+                            <h3>BASIC PLAN</h3>
+                        </div>
+                        <p class="price"><span class="dollar">$5</span><span class="period">/MONTH</span></p>
+                        <ul>
+                            <li>1 Website</li>
+                            <li>10GB SSD Storage</li>
+                            <li>Unlimited Bandwidth</li>
+                            <li>Free SSL Certificate</li>
+                            <li>5 Email Accounts</li>
+                            <li>Priority 24/7 Support</li>
+                            <li class="disabled">Daily Backups</li>
+                            <li class="disabled">Advanced Security Features</li>
+                        </ul>
+                        <a href="#" class="plan-button">Choose Basic</a>
+                    </div>
+
+                    <!-- BUSINESS PLAN -->
+                    <div class="plan-card business">
+                        <div class="plan-header">
+                            <h3>BUSINESS PLAN</h3>
+                        </div>
+                        <p class="price"><span class="dollar">$15</span><span class="period">/MONTH</span></p>
+                        <ul>
+                            <li>5 Websites</li>
+                            <li>50GB SSD Storage</li>
+                            <li>Unlimited Bandwidth</li>
+                            <li>Free SSL Certificate</li>
+                            <li>Unlimited Email Accounts</li>
+                            <li>Priority 24/7 Support</li>
+                            <li>Daily Backups</li>
+                            <li class="disabled">Advanced Security Features</li>
+                        </ul>
+                        <a href="#" class="plan-button">Choose Business</a>
+                    </div>
+
+                    <!-- ENTERPRISE PLAN -->
+                    <div class="plan-card enterprise">
+                        <div class="plan-header">
+                            <h3>ENTERPRISE PLAN</h3>
+                        </div>
+                        <p class="price custom">CUSTOM PRICING</p>
+                        <ul>
+                            <li>Unlimited Websites</li>
+                            <li>200GB SSD Storage</li>
+                            <li>Unlimited Bandwidth</li>
+                            <li>Free SSL Certificate</li>
+                            <li>Dedicated Account Manager</li>
+                            <li>Priority 24/7 Support</li>
+                            <li>Customizable Backup Solutions</li>
+                            <li>Advanced Security Features</li>
+                        </ul>
+                        <a href="#" class="plan-button">Contact Us</a>
+                    </div>
+                </div>
+            </section>
+            <section id="Feedback">
+                <h2>WHAT OUR CLIENTS SAY</h2>
+                <p class="subtitle">Real feedback from real users</p>
+
+                <div class="testimonial-container">
+
+                    <div class="slider">
+                        <!-- Témoignage 1 -->
+                        <div class="testimonial-card active">
+                            <div class="quote-icon left-quote">❝</div>
+                            <p class="testimonial-text">
+                                “Switching to Cloud Sphere was the best decision we made for our online store.
+                                The migration process was seamless, and our site has been running faster than ever.”
+                            </p>
+                            <div class="quote-icon right-quote">❞</div>
+                            <div class="client-info">
+                                <div class="client-photo"></div>
+                                <div class="client-details">
+                                    <h3>Sarah J.</h3>
+                                    <p>E-Commerce Business Owner</p>
+                                    <div class="stars">★★★★★</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="quote-icon left-quote">❝</div>
+                            <p class="testimonial-text">
+                                “I love the uptime and performance! My blog has never been this stable. Highly recommend Cloud Sphere.”
+                            </p>
+                            <div class="quote-icon right-quote">❞</div>
+                            <div class="client-info">
+                                <div class="client-photo"></div>
+                                <div class="client-details">
+                                    <h3>Alex P.</h3>
+                                    <p>Blogger</p>
+                                    <div class="stars">★★★★★</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Témoignage 3 -->
+                        <div class="testimonial-card">
+                            <div class="quote-icon left-quote">❝</div>
+                            <p class="testimonial-text">
+                                “Customer support is top-notch! They helped me move my site in no time.”
+                            </p>
+                            <div class="quote-icon right-quote">❞</div>
+                            <div class="client-info">
+                                <div class="client-photo"></div>
+                                <div class="client-details">
+                                    <h3>Maria L.</h3>
+                                    <p>Freelancer</p>
+                                    <div class="stars">★★★★☆</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+            <div class="contact-inner">
+                <div class="contact-image">
+                <img src="file:///C:/Users/User/Downloads/image.jpg" alt="Contact illustration">
+                </div>
+
+                <div class="contact-form-container">
+                    <h2>CONTACT US</h2>
+                    <p class="subtitle">Get in touch today</p>
+                    <form class="contact-form">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+                        <button type="submit" class="send-button">Send Message</button>
+                    </form>
+                <p class="form-info">
+                    Fill out the form below with your details and inquiry. Our team will respond promptly to assist you with any questions or support you need.
+                </p>
+                </div>
+            </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <div class="footer-container">
+                <!-- Logo + réseaux -->
+                <div class="footer-top">
+                <h3 class="footer-logo">Cloud Sphere</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                </div>
+
+                <!-- Liens -->
+                <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Quick Link</h4>
+                    <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                    <li><a href="#">Knowledge Base</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">Webinars</a></li>
+                    <li><a href="#">Whitepapers</a></li>
+                    <li><a href="#">eBooks</a></li>
+                    <li><a href="#">API Documentation</a></li>
+                    <li><a href="#">Community Forum</a></li>
+                    <li><a href="#">Developer Tools</a></li>
+                    <li><a href="#">Performance Tips</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Careers</h4>
+                    <ul>
+                    <li><a href="#">Join Our Team</a></li>
+                    <li><a href="#">Current Openings</a></li>
+                    <li><a href="#">Internships</a></li>
+                    <li><a href="#">Employee Benefits</a></li>
+                    <li><a href="#">Culture & Values</a></li>
+                    <li><a href="#">Diversity & Inclusion</a></li>
+                    <li><a href="#">Work–Life Balance</a></li>
+                    <li><a href="#">Meet Our Team</a></li>
+                    <li><a href="#">Apply Now</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Data Protection</a></li>
+                    <li><a href="#">GDPR Compliance</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">DMCA Policy</a></li>
+                    <li><a href="#">Service Level Agreement</a></li>
+                    <li><a href="#">Acceptable Use Policy</a></li>
+                    <li><a href="#">Security Practices</a></li>
+                    </ul>
+                </div>
+                </div>
+                <!-- Copyright -->
+                <div class="footer-bottom">
+                <p>© 2024 <strong>Cloud Sphere.</strong> All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
